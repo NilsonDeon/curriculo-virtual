@@ -1,2 +1,2 @@
-# curriculo-virtual
-projeto pessoal de um site currículo.
+## Currículo Virtual
+* Projeto pessoal de um site currículo.
