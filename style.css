@@ -1,14 +1,16 @@
 @font-face {
-    font-family: cyborg;
-    src: url(assets/fonts/cyborgrooster.ttf);
+    font-family: neon;
+    src: url(assets/fonts/SunsetClubFreeTrial-2ODpw.otf);
+/* link: https://www.fontspace.com/sunset-club-font-f53575 */
 }
 
 :root{
     --pink-lace: #EECCE7ff;
     --rose-pink: #F76DC2ff;
     --flirt: #A70074ff;
-    --oxford-blue: #00284Bff;
+    --cornflower-blue: #7F96FF;
     --usafa-blue: #0B5292ff;
+    --oxford-blue: #00284Bff;
 }
 
 *{
@@ -30,11 +32,11 @@ body{
 
 
 header{
+    font-family: neon, Arial, sans-serif;
     background-color: var(--oxford-blue);
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    
+    padding: 5px 10px;  
 }
 
 header img{
@@ -53,24 +55,60 @@ header li, a{
     padding-left: 2rem;
     cursor: pointer;
     text-decoration: none;
-    font-family: cyborg, Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-.opt{ /* Fazer efeito neon */
+.opt{
+    font-family: neon, Arial, sans-serif;
     color: white;
-    border-radius: 5px;
-    border: 1px solid white;
     padding: 5px;
-    font-size: 1.3em;
+    font-size: 2em;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
+.opt:hover{ /* neon efect */
+    box-shadow: .1vw 0vw .25vw var(--pink-lace), .2vw 0vw .25vw var(--pink-lace), .4vw 0vw .25vw var(--pink-lace), 
+  
+    .1vw 0vw   0vw var(--rose-pink), .2vw 0vw   0vw var(--rose-pink), .4vw 0vw   0vw var(--rose-pink),
+    .1vw 0vw  .1vw var(--rose-pink), .2vw 0vw  .1vw var(--rose-pink), .4vw 0vw  .1vw var(--rose-pink),
+    .1vw 0vw   2vw var(--rose-pink), .2vw 0vw   2vw var(--rose-pink), .4vw 0vw   2vw var(--rose-pink), 
+  
+    .1vw 0vw   1vw var(--flirt), .2vw 0vw   1vw var(--flirt), .4vw 0vw   5vw var(--flirt), 
+    .1vw 0vw   5vw var(--flirt), .2vw 0vw  20vw var(--flirt), .4vw 0vw  10vw var(--flirt),
+    .1vw 0vw  10vw var(--flirt), .2vw 0vw  30vw var(--flirt), .4vw 0vw  10vw var(--flirt);
 
-.title{ /* Fazer Efeito Neon */
+    text-shadow: 
+    .1vw 0vw .25vw var(--pink-lace), .2vw 0vw .25vw var(--pink-lace), .4vw 0vw .25vw var(--pink-lace), 
+  
+    .1vw 0vw   0vw var(--rose-pink), .2vw 0vw   0vw var(--rose-pink), .4vw 0vw   0vw var(--rose-pink),
+    .1vw 0vw  .1vw var(--rose-pink), .2vw 0vw  .1vw var(--rose-pink), .4vw 0vw  .1vw var(--rose-pink),
+    .1vw 0vw   2vw var(--rose-pink), .2vw 0vw   2vw var(--rose-pink), .4vw 0vw   2vw var(--rose-pink), 
+  
+    .1vw 0vw   1vw var(--flirt), .2vw 0vw   1vw var(--flirt), .4vw 0vw   5vw var(--flirt), 
+    .1vw 0vw   5vw var(--flirt), .2vw 0vw  20vw var(--flirt), .4vw 0vw  10vw var(--flirt),
+    .1vw 0vw  10vw var(--flirt), .2vw 0vw  30vw var(--flirt), .4vw 0vw  10vw var(--flirt);
+}
+
+.title{
     display: inline;
-    padding: 2px;
-    font-family: cyborg, Arial, sans-serif;
     color: white;
-    font-size: 2em;
+    padding: 2px;
+    font-family: neon, Arial, sans-serif;
+    font-size: 4em;
+}
+
+.neon-txt{ /* neon efect */
+    text-shadow: 
+    .1vw 0vw .25vw var(--pink-lace), .2vw 0vw .25vw var(--pink-lace), .4vw 0vw .25vw var(--pink-lace), 
+  
+    .1vw 0vw   0vw var(--rose-pink), .2vw 0vw   0vw var(--rose-pink), .4vw 0vw   0vw var(--rose-pink),
+    .1vw 0vw  .1vw var(--rose-pink), .2vw 0vw  .1vw var(--rose-pink), .4vw 0vw  .1vw var(--rose-pink),
+    .1vw 0vw   2vw var(--rose-pink), .2vw 0vw   2vw var(--rose-pink), .4vw 0vw   2vw var(--rose-pink), 
+  
+    .1vw 0vw   1vw var(--flirt), .2vw 0vw   1vw var(--flirt), .4vw 0vw   5vw var(--flirt), 
+    .1vw 0vw   5vw var(--flirt), .2vw 0vw  20vw var(--flirt), .4vw 0vw  10vw var(--flirt),
+    .1vw 0vw  10vw var(--flirt), .2vw 0vw  30vw var(--flirt), .4vw 0vw  10vw var(--flirt);
 }
 
 .sobre{
@@ -79,3 +117,4 @@ header li, a{
     margin-top: 25px;
     text-align: center;
 }
+
